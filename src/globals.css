@@ -3,16 +3,26 @@
 @tailwind utilities;
 
 :root {
-  /* COLORS */
-
-  /* Primary */
+  /* PRIMARY */
+  /* intro and email sign up background */
   --clr-blue-01: hsl(217, 28%, 15%);
+
+  /* main background */
   --clr-blue-02: hsl(218, 28%, 13%);
+
+  /* footer background */
   --clr-blue-03: hsl(216, 53%, 9%);
+
+  /* testimonials background */
   --clr-blue-04: hsl(219, 30%, 18%);
 
-  /* Accent */
+  /* ACCENT */
+  /* inside call-to-action gradient */
   --clr-cyan: hsl(176, 68%, 64%);
+
+  /* inside call-to-action gradient */
   --clr-blue-accent: hsl(198, 60%, 50%);
+
+  /* error */
   --clr-red: hsl(0, 100%, 63%);
 }
