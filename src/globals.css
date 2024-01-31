@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import '@fontsource-variable/raleway';
+@import '@fontsource-variable/open-sans';
 
 :root {
   /* PRIMARY */
@@ -28,5 +30,5 @@
 }
 
 body {
-  @apply bg-[--clr-blue-02];
+  @apply bg-[--clr-blue-02] text-white;
 }
