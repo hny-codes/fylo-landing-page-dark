@@ -26,3 +26,7 @@
   /* error */
   --clr-red: hsl(0, 100%, 63%);
 }
+
+body {
+  @apply bg-[--clr-blue-02];
+}
