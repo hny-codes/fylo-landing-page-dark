@@ -32,3 +32,12 @@
 body {
   @apply bg-[--clr-blue-02] text-white;
 }
+
+@layer components {
+  .link {
+    @apply hover:underline hover:font-bold 
+    before:block before:font-bold
+    before:h-0 before:overflow-hidden before:invisible
+    before:content-[attr(title)];
+  }
+}

@@ -1,0 +1,15 @@
+---
+import { Image } from 'astro:assets';
+import Logo from '../images/logo.svg';
+---
+
+<header class='my-8'>
+  <nav class='flex items-center justify-between gap-2'>
+    <a href='/'><Image src={Logo} alt={''} class={'w-[100px]'} /></a>
+    <div class='flex gap-8 font-raleway text-sm'>
+      <a href='/' class='link' title='Features'>Features</a>
+      <a href='/' class='link' title='Team'>Team</a>
+      <a href='/' class='link' title='Sign In'>Sign In</a>
+    </div>
+  </nav>
+</header>
