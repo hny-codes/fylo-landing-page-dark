@@ -1,8 +1,8 @@
+@import '@fontsource-variable/raleway';
+@import '@fontsource-variable/open-sans';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import '@fontsource-variable/raleway';
-@import '@fontsource-variable/open-sans';
 
 :root {
   /* PRIMARY */
