@@ -27,6 +27,8 @@
 
   /* error */
   --clr-red: hsl(0, 100%, 63%);
+
+  --max-width: 1440px;
 }
 
 body {
