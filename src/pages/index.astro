@@ -1,5 +1,7 @@
 ---
 import '../globals.css';
+import { Image } from 'astro:assets';
+import BgTopD from '../images/bg-curvy-desktop.svg';
 import Navbar from '../components/Navbar.astro';
 import Hero from '../components/Hero.astro';
 
@@ -15,9 +17,14 @@ const pageTitle = 'Fylo | Access Your Files';
     <title>{pageTitle}</title>
   </head>
   <body>
-    <div class='max-w-[--max-width] mx-auto'>
+    <div class=''>
       <Navbar />
-      <main>
+      <main class='relative'>
+        <Image
+          src={BgTopD}
+          alt={''}
+          class={'absolute top-[35rem] max-w-[100vw] w-full left-0 h-[449px] -z-50 hidden sm:block'}
+        />
         <Hero />
       </main>
     </div>
