@@ -32,7 +32,18 @@
 }
 
 body {
-  @apply bg-[--clr-blue-02] text-white;
+  @apply bg-[--clr-blue-01] text-white;
+}
+
+@layer base {
+  h1,
+  h2 {
+    @apply font-raleway font-bold;
+  }
+
+  button {
+    @apply font-raleway font-bold;
+  }
 }
 
 @layer components {
