@@ -1,0 +1,13 @@
+---
+type Props = {
+  text: string;
+};
+
+const { text }: Props = Astro.props;
+---
+
+<button
+  class='bg-gradient-to-r from-[--clr-cyan] to-[--clr-blue-accent] px-24 py-4 rounded-full hover:to-[--clr-cyan] hover:brightness-105'
+>
+  {text}
+</button>
