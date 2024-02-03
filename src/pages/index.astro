@@ -1,6 +1,7 @@
 ---
 import '../globals.css';
 import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
 
 const pageTitle = 'Fylo | Access Your Files';
 ---
@@ -14,8 +15,11 @@ const pageTitle = 'Fylo | Access Your Files';
     <title>{pageTitle}</title>
   </head>
   <body>
-    <div class='px-8 max-w-[--max-width] mx-auto'>
+    <div class='max-w-[--max-width] mx-auto'>
       <Navbar />
+      <main>
+        <Hero />
+      </main>
     </div>
   </body>
 </html>
