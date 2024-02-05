@@ -1,0 +1,59 @@
+---
+import AccessIcon from '../images/icon-access-anywhere.svg';
+import SecurityIcon from '../images/icon-security.svg';
+import CollabIcon from '../images/icon-collaboration.svg';
+import FileIcon from '../images/icon-any-file.svg';
+
+import Card from './Card.astro';
+
+// Access Card
+const titleAccess = 'Access your files, anywhere';
+const descAccess =
+  'The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.';
+
+// Security Card
+const titleSecurty = 'Security you can trust';
+const descSecurity =
+  '2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.';
+
+// Collab Card
+const titleCollab = 'Real-time collaboration';
+const descCollab =
+  'Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.';
+
+// File Card
+const titleFile = 'Store any type of file';
+const descFile =
+  "Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.";
+---
+
+<section class='bg-[--clr-blue-02] py-32'>
+  <div
+    class='px-8 grid grid-cols-1 gap-20 sm:grid-cols-2 max-w-[--max-width] mx-auto'
+  >
+    <Card
+      img={AccessIcon}
+      imgAlt='Icon Access Anywhere'
+      title={titleAccess}
+      desc={descAccess}
+    />
+    <Card
+      img={SecurityIcon}
+      imgAlt='Icon Security'
+      title={titleSecurty}
+      desc={descSecurity}
+    />
+    <Card
+      img={CollabIcon}
+      imgAlt='Icon Collaboration'
+      title={titleCollab}
+      desc={descCollab}
+    />
+    <Card
+      img={FileIcon}
+      imgAlt='Icon Any File'
+      title={titleFile}
+      desc={descFile}
+    />
+  </div>
+</section>
