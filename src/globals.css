@@ -59,4 +59,10 @@ body {
     before:h-0 before:overflow-hidden before:invisible
     before:content-[attr(title)];
   }
+
+  .productive-link {
+    @apply text-[--clr-cyan] w-fit hover:text-white
+    
+    before:content-[''] before:absolute before:bg-[--clr-cyan] before:w-full before:h-0.5 before:top-8 before:hover:bg-white;
+  }
 }
