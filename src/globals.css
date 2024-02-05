@@ -29,6 +29,8 @@
   --clr-red: hsl(0, 100%, 63%);
 
   --max-width: 1440px;
+
+  --font-body: 0.875rem;
 }
 
 body {
@@ -43,6 +45,10 @@ body {
 
   button {
     @apply font-raleway font-bold;
+  }
+
+  p {
+    @apply text-[--font-body];
   }
 }
 
