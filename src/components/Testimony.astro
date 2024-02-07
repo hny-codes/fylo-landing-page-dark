@@ -1,0 +1,29 @@
+---
+import { Image } from 'astro:assets';
+
+type Props = {
+  testimony: string;
+  username: string;
+  title: string;
+  image: ImageMetadata;
+};
+
+const { testimony, username, title, image } = Astro.props;
+---
+
+<div class='bg-[--clr-blue-04] rounded-md z-30'>
+  <div class='p-8'>
+    <p class='text-sm leading-loose md:text-base'>{testimony}</p>
+    <div class='flex gap-2 mt-8 items-center'>
+      <Image
+        src={image}
+        alt={`${username} user`}
+        class={'rounded-full max-w-12 scale-75'}
+      />
+      <div class='text-sm mt-1'>
+        <h3 class='font-bold tracking-wider'>{username}</h3>
+        <small class='brightness-75'>{title}</small>
+      </div>
+    </div>
+  </div>
+</div>

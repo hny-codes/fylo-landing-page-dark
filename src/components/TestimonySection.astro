@@ -1,0 +1,48 @@
+---
+import { Image } from 'astro:assets';
+import Quote from '../images/bg-quotes.png';
+import Profile1 from '../images/profile-1.jpg';
+import Profile2 from '../images/profile-2.jpg';
+import Profile3 from '../images/profile-3.jpg';
+import Testimony from './Testimony.astro';
+
+// Testimony
+const testimony =
+  'Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.';
+const title = 'Founder & CEO, Huddle';
+
+// Users
+const user1 = 'Satish Patel';
+const user2 = 'Bruce McKenzie';
+const user3 = 'Iva Boyd';
+---
+
+<section class='bg-[--clr-blue-02] py-20'>
+  <div
+    class='px-12 flex flex-col md:flex-row gap-10 relative max-w-[--max-width] mx-auto'
+  >
+    <Image
+      src={Quote}
+      alt={''}
+      class={'absolute -top-6 left-14 max-w-8 sm:left-10 sm:max-w-full sm:-top-8'}
+    />
+    <Testimony
+      testimony={testimony}
+      username={user1}
+      title={title}
+      image={Profile1}
+    />
+    <Testimony
+      testimony={testimony}
+      username={user2}
+      title={title}
+      image={Profile2}
+    />
+    <Testimony
+      testimony={testimony}
+      username={user3}
+      title={title}
+      image={Profile3}
+    />
+  </div>
+</section>
