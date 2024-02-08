@@ -48,7 +48,7 @@ body {
   }
 
   p {
-    @apply text-[--font-body];
+    @apply text-[--font-body] font-opensans;
   }
 }
 
