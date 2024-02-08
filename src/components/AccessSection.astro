@@ -1,0 +1,19 @@
+---
+import AccessForm from './AccessForm';
+---
+
+<section class='text-center bg-[--clr-blue-02] py-10'>
+  <div
+    class='py-10 px-8 mx-8 relative rounded-lg border border-[--clr-blue-02] shadow-2xl drop-shadow-xl bg-[--clr-blue-01] max-w-[1000px] lg:mx-auto md:px-20 md:py-12'
+  >
+    <div class='mb-8'>
+      <h2 class='text-xl mb-4 md:text-3xl'>Get early access today</h2>
+      <p class='md:w-[90%] md:mx-auto'>
+        It only takes a minute to sign up and our free starter tier is extremely
+        generous. If you have any questions, our support team would be happy to
+        help you.
+      </p>
+    </div>
+    <AccessForm client:load />
+  </div>
+</section>
