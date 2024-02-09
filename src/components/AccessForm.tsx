@@ -20,6 +20,7 @@ export default function AccessForm() {
     >
       <input
         placeholder='email@example.com'
+        data-test='form'
         {...register('email', {
           required: true,
           pattern: /^[\w\-\.]+@([\w-]+\.)+[\w-]{2,}$/,
@@ -29,6 +30,7 @@ export default function AccessForm() {
       {errors.email?.type === 'pattern' && (
         <p
           role='alert'
+          data-test='error'
           className='text-[--clr-red] font-bold md:absolute md:left-10 md:top-14 md:text-sm'
         >
           Please enter a valid email address
@@ -36,6 +38,7 @@ export default function AccessForm() {
       )}
       <button
         type='submit'
+        data-test='button'
         className='bg-gradient-to-r from-[--clr-cyan] to-[--clr-blue-accent] px-4 py-3 w-full rounded-full hover:to-[--clr-cyan] hover:brightness-105 md:flex-shrink md:max-w-56'
       >
         Get Started For Free
