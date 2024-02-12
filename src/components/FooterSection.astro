@@ -1,0 +1,107 @@
+---
+import { Image } from 'astro:assets';
+import Logo from '../images/logo.svg';
+import LocationIcon from '../images/icon-location.svg';
+import PhoneIcon from '../images/icon-phone.svg';
+import MailIcon from '../images/icon-email.svg';
+---
+
+<footer class='bg-[--clr-blue-03]'>
+  <div class='px-8 pt-64 pb-10 max-w-[--max-width] lg:mx-auto'>
+    <Image
+      src={Logo}
+      alt={'Fylo Logo'}
+      class={'mb-10 w-[55%] translate-x-3 sm:w-fit md:translate-x-0'}
+    />
+    <div class='flex flex-col justify-between gap-6 md:flex-row md:gap-10'>
+      <div class='flex gap-6 md:w-1/4'>
+        <Image
+          src={LocationIcon}
+          alt={'Location Icon'}
+          class={'h-full md:h-fit pt-1 '}
+        />
+        <p>
+          Lorem ipsum door sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua
+        </p>
+      </div>
+      <div class='flex flex-col gap-6 mb-10 sm:flex-row md:flex-col md:mb-0 lg:mr-24'>
+        <div class='flex gap-6'>
+          <Image
+            src={PhoneIcon}
+            alt={'Location Icon'}
+            class={'h-full md:h-fit pt-1'}
+          />
+          <p>+1-543-123-4567</p>
+        </div>
+        <div class='flex gap-6'>
+          <Image
+            src={MailIcon}
+            alt={'Location Icon'}
+            class={'h-full md:h-fit pt-1'}
+          />
+          <p>example@fylo.com</p>
+        </div>
+      </div>
+      <div class='flex flex-col gap-3 mb-8 md:mb-0'>
+        <a href='/' class='footer-link' title='About Us'>About Us</a>
+        <a href='/' class='footer-link' title='Jobs'>Jobs</a>
+        <a href='/' class='footer-link' title='Press'>Press</a>
+        <a href='/' class='footer-link' title='Blog'>Blog</a>
+      </div>
+      <div class='flex flex-col gap-3 mb-8 md:mb-0'>
+        <a href='/' class='footer-link' title='Contact Us'>Contact Us</a>
+        <a href='/' class='footer-link' title='Terms'>Terms</a>
+        <a href='/' class='footer-link' title='Privacy'>Privacy</a>
+      </div>
+      <div class='flex gap-2 justify-center'>
+        <a href=''
+          ><svg
+            xmlns='http://www.w3.org/2000/svg'
+            width='32'
+            height='32'
+            viewBox='-2 -2 24 24'
+            class='group'
+            ><g fill='#FFFFFF' class='group-hover:fill-[--clr-cyan]'
+              ><path
+                d='M8.695 6.937v1.377H7.687v1.683h1.008V15h2.072V9.997h1.39s.131-.807.194-1.69h-1.576v-1.15c0-.173.226-.404.45-.404h1.128V5h-1.535C8.644 5 8.695 6.685 8.695 6.937'
+              ></path><path
+                d='M10 18a8 8 0 1 0 0-16a8 8 0 0 0 0 16m0 2C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10s-4.477 10-10 10'
+              ></path></g
+            ></svg
+          ></a
+        >
+        <a href=''
+          ><svg
+            xmlns='http://www.w3.org/2000/svg'
+            width='32'
+            height='32'
+            viewBox='-2 -2 24 24'
+            class='group'
+            ><g fill='#FFFFFF' class='group-hover:fill-[--clr-cyan]'
+              ><path
+                d='M10 18a8 8 0 1 0 0-16a8 8 0 0 0 0 16m0 2C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10s-4.477 10-10 10'
+              ></path><path
+                d='M15 6.947c-.368.16-.763.27-1.178.318c.424-.25.748-.646.902-1.117a4.16 4.16 0 0 1-1.304.49A2.06 2.06 0 0 0 11.923 6c-1.133 0-2.051.905-2.051 2.02c0 .158.018.312.053.46a5.854 5.854 0 0 1-4.228-2.11a1.982 1.982 0 0 0-.278 1.015c0 .7.363 1.32.913 1.681a2.076 2.076 0 0 1-.93-.253v.025a2.03 2.03 0 0 0 1.646 1.98a2.108 2.108 0 0 1-.927.034a2.049 2.049 0 0 0 1.916 1.403a4.156 4.156 0 0 1-2.548.864c-.165 0-.328-.01-.489-.028A5.863 5.863 0 0 0 8.144 14c3.774 0 5.837-3.078 5.837-5.748l-.007-.262A4.063 4.063 0 0 0 15 6.947'
+              ></path></g
+            ></svg
+          ></a
+        >
+        <a href=''
+          ><svg
+            xmlns='http://www.w3.org/2000/svg'
+            width='32'
+            height='32'
+            viewBox='0 0 24 24'
+            class='group'
+            ><path
+              fill='#FFFFFF'
+              class='group-hover:fill-[--clr-cyan]'
+              d='M12.001 9a3 3 0 1 0 0 6a3 3 0 0 0 0-6m0-2a5 5 0 1 1 0 10a5 5 0 0 1 0-10m6.5-.25a1.25 1.25 0 0 1-2.5 0a1.25 1.25 0 0 1 2.5 0M12.001 4c-2.474 0-2.878.007-4.029.058c-.784.037-1.31.142-1.798.332a2.886 2.886 0 0 0-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.007 9.075 4 9.461 4 12c0 2.475.007 2.878.058 4.029c.037.783.142 1.31.331 1.797c.17.435.37.748.702 1.08c.337.336.65.537 1.08.703c.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.475 0 2.878-.007 4.029-.058c.782-.037 1.308-.142 1.797-.331a2.91 2.91 0 0 0 1.08-.703c.337-.336.538-.649.704-1.08c.19-.492.296-1.018.332-1.8c.052-1.103.058-1.49.058-4.028c0-2.474-.007-2.878-.058-4.029c-.037-.782-.143-1.31-.332-1.798a2.912 2.912 0 0 0-.703-1.08a2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.926 4.006 14.54 4 12 4m0-2c2.717 0 3.056.01 4.123.06c1.064.05 1.79.217 2.427.465c.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428c.047 1.066.06 1.405.06 4.122c0 2.717-.01 3.056-.06 4.122c-.05 1.065-.218 1.79-.465 2.428a4.884 4.884 0 0 1-1.153 1.772a4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465c-1.067.047-1.406.06-4.123.06c-2.717 0-3.056-.01-4.123-.06c-1.064-.05-1.789-.218-2.427-.465a4.89 4.89 0 0 1-1.772-1.153a4.905 4.905 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.012 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122c.05-1.065.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.637-.248 1.362-.415 2.427-.465C8.945 2.013 9.284 2 12.001 2'
+            ></path></svg
+          ></a
+        >
+      </div>
+    </div>
+  </div>
+</footer>
