@@ -65,4 +65,10 @@ body {
     
     before:content-[''] before:absolute before:bg-[--clr-cyan] before:w-full before:h-0.5 before:top-8 before:hover:bg-white;
   }
+
+  .footer-link {
+    @apply hover:font-bold w-fit before:block before:font-bold
+    before:h-0 before:overflow-hidden before:invisible
+    before:content-[attr(title)];
+  }
 }
