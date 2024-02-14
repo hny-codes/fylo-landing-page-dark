@@ -1,47 +1,42 @@
-# Astro Starter Kit: Minimal
+# Fylo Landing Page - Dark Theme
 
-```sh
-npm create astro@latest -- --template minimal
-```
+This is a solution to the [Fylo dark theme landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+![](/public/screenshot.png)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Table of Contents
 
-## 🚀 Project Structure
+- [Overview](#overview)
+- [The challenge](#the-challenge)
+- [Built with](#built-with)
+- [Useful resources](#useful-resources)
 
-Inside of your Astro project, you'll see the following folders and files:
+## Overview
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+The purpose of this project is to build a static landing page adn replicate it to the given style sheet as close as possible. This project is built using [Astro](https://astro.build/)
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## The challenge
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Users should be able to:
 
-Any static assets, like images, can be placed in the `public/` directory.
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
 
-## 🧞 Commands
+## Built with
 
-All commands are run from the root of the project, from a terminal:
+- Astro
+- Tailwind CSS
+- React
+- Cypress
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Useful resources
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- [Raleway Font](https://fontsource.org/fonts/raleway)
+- [Open Sans Font](https://fontsource.org/fonts/open-sans)
+- [Inline Elemental Shift Solution](https://stackoverflow.com/questions/556153/inline-elements-shifting-when-made-bold-on-hover)
+- [Email Regex](https://regex101.com/r/lHs2R3/1)
+- [Icones - Social Media Icons](https://icones.js.org/)
+- [React Hook Form](https://react-hook-form.com/)
+- [Astro Documentation](https://docs.astro.build/en/getting-started/)
+- [Tailwind Documentation](https://tailwindcss.com/docs/installation)
+- [Cypress Test Suite](https://www.cypress.io/)
