@@ -13,7 +13,7 @@ This is a solution to the [Fylo dark theme landing page challenge on Frontend Me
 
 ## Overview
 
-The purpose of this project is to build a static landing page adn replicate it to the given style sheet as close as possible. This project is built using [Astro](https://astro.build/)
+The purpose of this project is to build a static landing page and replicate it to the given style sheet as close as possible. This project is built using [Astro](https://astro.build/)
 
 ## The challenge
 
